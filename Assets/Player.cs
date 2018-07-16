@@ -27,7 +27,8 @@ public class Player : MonoBehaviour {
         }
         else if (Input.GetKeyDown("space") &&jumping)
         {
-            //rig2d.AddForce(Vector2.up * 28000);
+            rig2d.velocity = new Vector2(0,0);
+            rig2d.AddForce(Vector2.up * 28000);
             jumping = false;
         }
         touched = Physics2D.Linecast(transform.position, transform.position - new Vector3(1, 0, 0) * 18, jimenLayer)
