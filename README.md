@@ -1,0 +1,1 @@
+# ゲーム「Become A Goddess」
